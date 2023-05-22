@@ -9,7 +9,7 @@ const ImageGenerator = () => {
   const [height, setHeight] = useState(300);
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false)
-  const API_TOKEN = "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";
+  const API_TOKEN = "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";
   const handleSubmit = async (e) => {
     e.preventDefault();
     setImage(null)
