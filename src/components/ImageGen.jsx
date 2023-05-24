@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ImageGenerator = () => {
   const [input, setInput] = useState('');
-  const [seed, setSeed] = useState(0);
+  const [seed, setSeed] = useState('');
   const [steps, setSteps] = useState(10);
   const [guidanceScale, setGuidanceScale] = useState(0.5);
   const [width, setWidth] = useState(500);
@@ -122,6 +122,7 @@ const ImageGenerator = () => {
             onChange={(e) => setSeed(e.target.value)}
             style={styles.input}
             placeholder="Enter seed"
+            min={0}
           />
         </div>
         <div style={styles.row}>
