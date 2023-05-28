@@ -14,6 +14,7 @@ const ImageGenerator = () => {
     e.preventDefault();
     setImage(null)
     setLoading(true)
+    const newSeed = Math.floor(Math.random() * 1000000) + 1;
     const res = await fetch('https://api-inference.huggingface.co/models/prompthero/openjourney', {
       method: 'POST',
       headers: {
@@ -24,7 +25,7 @@ const ImageGenerator = () => {
         inputs: input,
         steps,
         guidance_scale: guidanceScale,
-        seed,
+        seed: newSeed,
         width,
         height,
       }),
