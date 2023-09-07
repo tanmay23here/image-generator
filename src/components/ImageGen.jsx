@@ -48,7 +48,7 @@ const ImageGenerator = () => {
               value={input}
               className='Prompt'
               onChange={(e) => setInput(e.target.value)}
-              style={{ ...styles.input, width: '100%' }}
+              style={{ ...styles.input, width: '40rem' }}
               placeholder="Enter Your Prompt"
             />
           </div>
@@ -84,6 +84,9 @@ const styles = {
     padding: '2rem',
     borderRadius: '10px',
     boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.1)',
+    width: '100%',
+    maxWidth: '800px',
+    margin: '0 auto',
   },
   heading: {
     fontSize: '2rem',
@@ -95,7 +98,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'stretch',
     marginBottom: '2rem',
-    width: '35rem',
+    width: '100%',
   },
   row: {
     display: 'flex',
@@ -107,6 +110,7 @@ const styles = {
     fontSize: '1rem',
     border: '1px solid #ccc',
     borderRadius: '0.5rem',
+    width: '35rem',
   },
   button: {
     padding: '0.5rem 1rem',
