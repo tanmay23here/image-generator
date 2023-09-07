@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,20 +17,19 @@ code {
   color: white;
   font-family: Copperplate, Papyrus, fantasy;
 }
+::-webkit-input-placeholder {
+  text-align: center;
+}
 .btn {
-  margin-left: 10rem;
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 0.5rem;
-  background-color: #0077ff;
-  color: #fff;
+  background-color: #ffdd02;
+  color: #000;
   cursor: pointer;
   width: 200px;
   align-self: center;
   border-width: 1px;
-}
-.gen {
-  color: #7559ff;
 }
 .values{
   width: 2.7rem;
