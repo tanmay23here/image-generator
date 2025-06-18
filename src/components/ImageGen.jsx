@@ -12,7 +12,7 @@ const ImageGenerator = () => {
     setImage(null);
     setLoading(true);
     const newSeed = Math.floor(Math.random() * 1000000) + 1;
-    const res = await fetch('https://api-inference.huggingface.co/models/prompthero/openjourney', {
+    const res = await fetch('https://api-inference.huggingface.co/models/prompthero/openjourney-v4', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
